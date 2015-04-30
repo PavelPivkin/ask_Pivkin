@@ -1,9 +1,29 @@
 .avatar {
-    margin-right: 8pt;
+    margin-top: 8pt;
+    margin-left: 8pt;
+
 }   
 
-.user_online {
-    margin-left: 360pt;
+.avatar-in-header {
+    margin-left: -50pt;
+    float: left;
+    margin-top: 8pt
+}
+#settings-button {
+    float:left; 
+    margin-right:4pt;   
+}
+body{
+    font-family: Univers;
+}
+.user-online {
+    margin-left: 20pt;
+    margin-right: 20pt;	
+}
+
+.user-offline {
+    margin-top:16pt;
+    margin-right:8pt;
 }
 
 .question {
@@ -13,12 +33,26 @@
     border-style: solid;
     border-width: 2pt;
     border-color: lightblue;
-    position:absolute;
+    margin-bottom: 8pt;
+    min-height: 150pt;
 }
 
-.question_leftside, .question_rightside {
+#questionToAnswer {
+    border-width: 0pt;
+    border-bottom-width: 4pt;
+    margin-bottom: 16pt;
+    border-color: lightblue;    
+} 
+
+.question_leftside {
     float: left;
-    margin: 2pt;
+    margin: 4pt;
+}
+
+.question_rightside {
+    min-height: 100pt;
+    padding: 16pt;
+    
 }
 
 .popular_tags, .best_authors{
@@ -27,6 +61,9 @@
     margin-left: 10pt;
 }
 
+.paragraph-answer {
+    min-height: 80pt;
+}
 .page-header {
     border-style: solid;
     border-width: 2pt;
@@ -39,5 +76,10 @@
 .best_authors  ul  li {
     font-style:underline;
 }
+
+.navbar-block{
+    margin-top:16pt;
+}
+
 
 
