@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<div id="questionToAnswer" class="question">
+    <div class="question_leftside">
+        <div class="avatar">
+            <img src="http://lorempixel.com/100/100/people/"></img> 
+        </div>
+    </div>
+    <div class="question_rightside">
+        <h3><u><a href="http://ask_Pivkin:8080/question/">Как изучить Питон?</a></u></h3>
+        <p>Говорят, питон легкий для изучения язык программирования, с чего начать его изучение...</p>
+        <ul class="list-unstyled list-inline">
+            <li>
+                <a href="http://ask_Pivkin:8080/question/"><u>ответы(3)</u></a>
+            </li>
+            <li>
+                <h4>Теги:</h4>
+            </li>
+            <li>
+                <a href = "#"><u>тег1</u></a>
+            </li>
+            <li>
+                <a href = "#"><u>тег2</u></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="answer" class="question">
+    <div class="question_leftside">
+        <div class="avatar">
+            <img src="http://lorempixel.com/100/100/people/"></img>
+        </div>
+        <div class="nav like">
+            <form class="navbar-form navbar-block">
+                <button type="button" class="btn btn-info navbar-left" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-thumbs-down " aria-hidden="true"></span>
+                </button>
+                <label class="likes-number navbar-left"><h5>10</h5></label>
+                <button type="button" class="btn btn-info navbar-left" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-thumbs-up " aria-hidden="true"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="question_rightside">
+        <div class="paragraph-answer">
+            <p>Купи учебник уже</p>
+        </div>
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Правильный ответ!
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="userAnswer">
+    <div class="form-group">
+        <textarea class="form-control" rows="6" placeholder="Ваш ответ" id="inputAnswerText"></textarea></br>
+        <button type="submit" class="btn btn-primary">Ответить</button>
+    </div>    
+</div>
+
+
+
+{% endblock %}
